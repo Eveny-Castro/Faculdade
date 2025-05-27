@@ -3,64 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #3e342b;
-    color: #1b1a1a;
+    background-color: #ffe4ec;
+    color: #3a1f2e;
     padding: 20px;
 }
-
 header {
     text-align: center;
     margin-bottom: 30px;
 }
-
 header h1 {
-    color: #d4a053;
+    color: #b3395e;
     font-size: 2.5rem;
 }
-
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
-
-.form-section,
-.lista-section {
-    background-color: #2f2720;
+.form-section {
+    background-color: #f8a5c2;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
+.lista-section {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
 h2 {
-    color: #ffc874;
+    color: #b3395e;
     margin-bottom: 15px;
 }
-
 form {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
 form label {
     font-weight: bold;
-    color: #ffe9c8;
+    color: #3a1f2e;
 }
-
 form input,
 form select {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #e6679c;
     border-radius: 8px;
-    outline-color: #2f2720;
+    outline-color: #b3395e;
 }
-
 form button {
-    background-color: #2f2720;
+    background-color: #e6679c;
     color: white;
     padding: 12px;
     border: none;
@@ -69,23 +64,19 @@ form button {
     font-weight: bold;
     transition: background 0.3s;
 }
-
 form button:hover {
-    background-color: #241c16;
+    background-color: #b3395e;
 }
-
-
 #livro-lista {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .livro-card {
-    border: 1px solid #d4a053;
+    border: 2px solid #e6679c;
     padding: 20px;
-    border-radius: 12px;
-    background-color: #d4a053;
+    border-radius: 16px;
+    background-color: #f8a5c2;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -93,40 +84,31 @@ form button:hover {
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .livro-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
-
 .livro-info {
     flex: 1;
     min-width: 200px;
 }
-
 .livro-info p {
     margin: 6px 0;
 }
-
-
 .livro-acoes .excluir {
     background-color: transparent;
-    border: 2px solid #d4a053;
-    color: #eb2f06;
+    border: 2px solid #b3395e;
+    color: #b3395e;
     padding: 8px 14px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s;
 }
-
 .livro-acoes .excluir:hover {
-    background-color: #eb2f06;
+    background-color: #b3395e;
     color: white;
 }
-
-
-
 .status-tag {
     display: inline-block;
     padding: 4px 10px;
@@ -135,19 +117,15 @@ form button:hover {
     font-size: 0.8rem;
     font-weight: bold;
 }
-
 .status-lido {
     background-color: #31ff91;
 }
-
 .status-lendo {
     background-color: #3f7eba;
 }
-
 .status-nao-lido {
     background-color: #ff1d1d;
 }
-
 footer {
     text-align: center;
     margin-top: 40px;
